@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y&G</title>
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        html,
+        body {
+            min-height: 100%;
+        }
+
+        body {
+            font-family: 'IBM Plex Sans Thai', sans-serif;
+            background-image: url(bg2_1.jpg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            min-width: 300px;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translatey(0px);
+            }
+
+            50% {
+                transform: translatey(-5px);
+            }
+
+            100% {
+                transform: translatey(0px);
+            }
+        }
+
+        .emblem {
+            animation: float 6s ease-in-out infinite;
+            transform: translatey(0px);
+        }
+    </style>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+    <div class="mt-2">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="anim-container position-relative">
+                    <lottie-player src="anim.json" background="transparent" speed="1"
+                        style="width: 100%; max-width: 400px;" loop autoplay></lottie-player>
+                    <div class="position-absolute w-100" style="bottom: 90px;">
+                        <img src="emblem6.png" alt="" class="w-100 d-block mx-auto emblem" style="max-width: 350px;" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center flex-column">
+                <div class="mx-auto">
+
+                    <a class="btn btn-lg btn-outline-success mx-auto" rel="noopener"
+                        href="https://goo.gl/maps/PCEA33e7Vucs4MrQA" target="_blank">
+                        <div class="d-flex">
+                            <img src="map_854878.png" alt="location" style="height: 26px;" class="me-2" />
+                            <span>คลิกดูสถานที่  (Maps)</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mx-auto mt-3" style="max-width: 150px;">
+                    <a href="map.jpg" data-fslightbox="first-lightbox">
+                        <img src="map.jpg" alt="" class="w-100 img-thumbnail" />
+                        <div class="text-center text-dark">
+                            <small>คลิกเพื่อขยาย</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="fslightbox.js"></script>
+
+</body>
+
+</html>
